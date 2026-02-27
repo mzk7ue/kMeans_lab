@@ -54,7 +54,7 @@ merged_data = merged_data.sort_values(by = 'G', ascending = False)
 merged_data.head()
 
 # %%
-# Drop duplicated and keep the first occurance of the player (which would be ones with the highest number of games played)
+# Drop duplicated and keep the first occurrence of the player (which would be ones with the highest number of games played)
 merged_data = merged_data.drop_duplicates(subset = 'Player', keep = 'first')
 
 # %%
@@ -138,7 +138,7 @@ plt.show()
 # %%
 # Visualization of the result with 3 variables (3D)
 # cluster assignments are represented by the symbols of the points, 
-# and points are colored based on their saliers
+# and points are colored based on their salaries
 fig = px.scatter_3d(
     df_standardized,
     x = 'eFG%',
